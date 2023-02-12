@@ -1,6 +1,6 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
 }
 
@@ -26,6 +26,7 @@ nav {
     margin: 20px auto;
     z-index: 1;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -70,6 +71,16 @@ nav {
     position: relative;
     color: #fff;
     text-decoration: none;
+}
+
+.nav-links ul:hover li a {
+    color: #c7037c;
+}
+
+.nav-links ul:hover li a:not(:hover) {
+    color: #fff;
+    opacity: 0.3;
+    filter: blur(1px);
 }
 
 .information {
